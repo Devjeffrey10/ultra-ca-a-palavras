@@ -6,8 +6,6 @@ import { THEMES } from './constants';
 import { generateGrid } from './utils/gameLogic';
 import Grid from './components/Grid';
 import Sidebar from './components/Sidebar';
-import logo from './assets/logo.png';
-import mascot from './assets/UltraMascote.png';
 
 export default function App() {
   const [currentTheme, setCurrentTheme] = useState<Theme | null>(null);
@@ -103,8 +101,8 @@ export default function App() {
 
         <div className="flex flex-col items-center justify-center gap-6 mb-6">
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <img src={logo} alt="Ultra Cursos Logo" className="h-14 md:h-20 object-contain" referrerPolicy="no-referrer" />
-            <img src={mascot} alt="Mascote Ultra" className="h-20 md:h-28 object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_0_20px_rgba(0,242,255,0.3)]" referrerPolicy="no-referrer" />
+            <img src="/logo.png" alt="Ultra Cursos Logo" className="h-14 md:h-20 object-contain" />
+            <img src="/UltraMascote.png" alt="Mascote Ultra" className="h-20 md:h-28 object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_0_20px_rgba(0,242,255,0.3)]" />
           </div>
           <div className="flex items-center gap-4">
             <div className="p-2 rounded-lg bg-cyber-blue/10 dark:bg-cyber-blue/20">
@@ -210,7 +208,7 @@ export default function App() {
             >
               <div className="flex justify-center mb-6 relative">
                 <div className="absolute -top-12 -right-4 w-24 h-24 rotate-12">
-                   <img src={mascot} alt="Mascote Ultra" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+                   <img src="/UltraMascote.png" alt="Mascote Ultra" className="w-full h-full object-contain" />
                 </div>
                 <div className="w-20 h-20 bg-cyber-green rounded-full flex items-center justify-center">
                   <Trophy className="w-10 h-10 text-cyber-black" />
@@ -235,7 +233,7 @@ export default function App() {
       </AnimatePresence>
 
       <footer className="mt-16 text-[10px] opacity-40 uppercase tracking-[0.5em] font-medium text-center">
-        Desenvolvido para Ultra Cursos Carpina-PE • 2026
+        Desenvolvido para Ultra Cursos Carpina-PE • 2026 v2
       </footer>
     </div>
   );
