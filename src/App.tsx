@@ -99,15 +99,18 @@ export default function App() {
           {appTheme === 'dark' ? <Sun className="w-5 h-5 text-cyber-blue" /> : <Moon className="w-5 h-5 text-cyber-pink" />}
         </button>
 
-        <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <div className="flex items-center justify-center gap-4">
-            <img src="/logo.png" alt="Ultra Cursos Logo" className="h-12 md:h-16 object-contain" referrerPolicy="no-referrer" />
-            <img src="/UltraMascote.png" alt="Mascote Ultra" className="h-16 md:h-20 object-contain drop-shadow-md" referrerPolicy="no-referrer" />
+        <div className="flex flex-col items-center justify-center gap-6 mb-6">
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <img src="/logo.png" alt="Ultra Cursos Logo" className="h-14 md:h-20 object-contain" referrerPolicy="no-referrer" />
+            <img src="/UltraMascote.png" alt="Mascote Ultra" className="h-20 md:h-28 object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_0_20px_rgba(0,242,255,0.3)]" referrerPolicy="no-referrer" />
           </div>
-          <div className="flex items-center gap-3">
-            <Cpu className="text-cyber-blue w-8 h-8" />
-            <h1 className="text-4xl md:text-5xl font-black italic tracking-tighter uppercase">
-              Caça Palavras <span className="text-cyber-blue">Ultra</span>
+          <div className="flex items-center gap-4">
+            <div className="p-2 rounded-lg bg-cyber-blue/10 dark:bg-cyber-blue/20">
+              <Cpu className="text-cyber-blue w-6 h-6 md:w-8 md:h-8" />
+            </div>
+            <h1 className="text-4xl md:text-6xl font-extrabold italic tracking-tighter uppercase flex flex-col items-start leading-none">
+              <span className="text-2xl md:text-3xl font-black not-italic opacity-40">Caça Palavras</span>
+              <span className="text-cyber-blue drop-shadow-sm">Ultra Cursos</span>
             </h1>
           </div>
         </div>
